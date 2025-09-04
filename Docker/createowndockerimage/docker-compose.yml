@@ -1,0 +1,15 @@
+services:
+  myimage:
+    build:
+      context: .
+    container_name: customimage
+    ports:
+      - "5000:5000"
+
+  ubuntu:
+    image: ubuntu:20.04
+    container_name: ubuntuimage
+    volumes:
+      - ./app:/app
+    ports:
+      - "8080:8080"
