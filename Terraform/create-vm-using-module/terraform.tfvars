@@ -1,0 +1,9 @@
+vm_count = 3
+vm_names = ["web1", "web2", "web3"]
+zone = "asia-southeast1-b"
+machine_type = "e2-micro"
+allow_stopping_for_update = true
+network = "custom-vpc"
+subnetwork = "custom-sub"
+image = "ubuntu-os-cloud/ubuntu-2204-lts"
+size = 10
